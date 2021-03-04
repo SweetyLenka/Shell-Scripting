@@ -1,17 +1,15 @@
 #!/bin/bash -x
 
+read -p "Entered date from (1 to 20) :" $1
+read -p "Entered month number from (1 to  12): " $2
 
-echo "Enter Date : $1"
-echo "Enter Month : $2"
+date=$1
+month=$2
 
-if(( ($2 <= 6 & $1 <= 20) ))
+if [[ $month -ge 3  && $Date -le 20  &&  $month -le 6 ]]
 then
-		echo $2 $1 "True";
-elif (( ($2 >= 3 & $2 < 6) & ($1<31)  ))
-then
-        echo $1 $2 "True";
-
+   echo "true"
 else
-
-        echo "False";
+   echo "false"
 fi
+
