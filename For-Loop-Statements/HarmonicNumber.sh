@@ -1,8 +1,13 @@
-#!/bin/bash -x
-n=$1
-echo -e "1\c"
-for ((i=2; i<=n; i++))
+#! /bin/bash
+
+read -p 'enter number ' num
+for (( count = 1 ; count<=$num ; count++ ))
 do
-	echo -e " +\c"
-	echo -e " 1/$i\c"
+if [ $count -eq $num ];
+then
+   printf '1/'$count;
+else
+   printf '1/'$count' + ';
+fi
 done
+
