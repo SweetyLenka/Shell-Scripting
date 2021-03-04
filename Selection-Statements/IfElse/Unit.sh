@@ -26,6 +26,8 @@ then
 elif [[ $num -eq 1000000000 ]]
 then
       echo "Billions"
+else
+     echo "Enter a number in zero form"
 fi
 
 
