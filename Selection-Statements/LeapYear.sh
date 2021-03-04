@@ -16,7 +16,7 @@ if [ $year -ge 1000 ] && [ $year -le 9999 ]
    else
       echo $year "is not a leap year"
    fi
-   else
+else
       echo "Enter  a valid year"
 fi
 
